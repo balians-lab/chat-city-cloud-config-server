@@ -6,3 +6,8 @@ eureka:
       defaultZone: ${EUREKA_SERVER_URL:http://localhost:8761/eureka/}
   instance:
     hostname: ${HOSTNAME:localhost}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
